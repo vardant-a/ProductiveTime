@@ -7,13 +7,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
+    
+    private var button: UIButton {
+        let button = UIButton()
+        return button
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .gray
+        
+        setNavigationBar()
+        
     }
+}
 
-
+    // MARK: - Navigation Bar
+extension ViewController {
+    
+    private func setNavigationBar() {
+        title = "test"
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
 }
 
