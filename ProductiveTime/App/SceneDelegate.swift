@@ -14,11 +14,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // Вызывается сразу после метода application didFinishLaunchingWithOptions
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         let mainViewController = UINavigationController(rootViewController: MainTabBarController())
+        
+        let navBarAppearance = UINavigationBarAppearance()
+        navBarAppearance.backgroundColor = UIColor.navTabColor
+        UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = mainViewController
         window?.makeKeyAndVisible()
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window?.windowScene = windowScene
+
     }
     
     // Вызывается перед переходом приложения в активное состояние
@@ -46,4 +52,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         print(#function)
     }
 }
-

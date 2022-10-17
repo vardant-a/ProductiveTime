@@ -5,16 +5,17 @@
 //  Created by Алексей on 08.10.2022.
 //
 
-import UIKit
+import SwiftUI
 
 final class MainTabBarController: UITabBarController {
     
     let mainVC = MainViewController()
     let secondVC = SecondViewController()
+    let tabBarAppearance = UITabBarAppearance()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setTabBar()
         viewControllers = [
             generateVC(
                 viewController: mainVC,
@@ -37,5 +38,24 @@ extension MainTabBarController {
         viewController.tabBarItem.title = title
         viewController.tabBarItem.image = image
         return viewController
+    }
+}
+
+extension MainTabBarController {
+    private func setTabBar() {
+        tabBarAppearance.backgroundColor = UIColor.navTabColor
+        
+        if #available(iOS 15.0, *) {
+            UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+        } else {
+            print("не сработало")
+        }
+    }
+}
+
+
+struct MainTabBarControllerProvider: PreviewProvider {
+    static var previews: some View {
+        MainTabBarController().showPreview()
     }
 }

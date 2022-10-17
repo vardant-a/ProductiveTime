@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E15E6EC28FDB93700CAE16B /* UIViewController + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15E6EB28FDB93700CAE16B /* UIViewController + extension.swift */; };
 		0E23770128F1CAC900D67E58 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E23770028F1CAC900D67E58 /* MainTabBarController.swift */; };
 		0E23770328F1CC3900D67E58 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E23770228F1CC3900D67E58 /* SecondViewController.swift */; };
 		0E23770628F1FD0B00D67E58 /* Colors + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E23770528F1FD0B00D67E58 /* Colors + Extension.swift */; };
+		0EBFD5B228F82C3300D557F0 /* UIColor + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBFD5B128F82C3300D557F0 /* UIColor + extension.swift */; };
 		0EDEDB9428F1C0B4009F359F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDEDB9328F1C0B4009F359F /* AppDelegate.swift */; };
 		0EDEDB9628F1C0B4009F359F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDEDB9528F1C0B4009F359F /* SceneDelegate.swift */; };
 		0EDEDB9828F1C0B4009F359F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDEDB9728F1C0B4009F359F /* MainViewController.swift */; };
@@ -18,9 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E15E6EB28FDB93700CAE16B /* UIViewController + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + extension.swift"; sourceTree = "<group>"; };
 		0E23770028F1CAC900D67E58 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		0E23770228F1CC3900D67E58 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		0E23770528F1FD0B00D67E58 /* Colors + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors + Extension.swift"; sourceTree = "<group>"; };
+		0EBFD5B128F82C3300D557F0 /* UIColor + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + extension.swift"; sourceTree = "<group>"; };
 		0EDEDB9028F1C0B4009F359F /* ProductiveTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductiveTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDEDB9328F1C0B4009F359F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EDEDB9528F1C0B4009F359F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +56,7 @@
 		0EDEDB8728F1C0B4009F359F = {
 			isa = PBXGroup;
 			children = (
+				0E15E6EB28FDB93700CAE16B /* UIViewController + extension.swift */,
 				0EDEDB9228F1C0B4009F359F /* ProductiveTime */,
 				0EDEDB9128F1C0B4009F359F /* Products */,
 			);
@@ -69,11 +74,12 @@
 			isa = PBXGroup;
 			children = (
 				0EDEDBA728F1C4FB009F359F /* App */,
-				0EDEDB9728F1C0B4009F359F /* MainViewController.swift */,
 				0E23770028F1CAC900D67E58 /* MainTabBarController.swift */,
+				0EDEDB9728F1C0B4009F359F /* MainViewController.swift */,
 				0E23770228F1CC3900D67E58 /* SecondViewController.swift */,
 				0E23770428F1FCEE00D67E58 /* Extensions */,
 				0EDEDB9C28F1C0B5009F359F /* Assets.xcassets */,
+				0EBFD5B128F82C3300D557F0 /* UIColor + extension.swift */,
 			);
 			path = ProductiveTime;
 			sourceTree = "<group>";
@@ -161,7 +167,9 @@
 			files = (
 				0EDEDB9828F1C0B4009F359F /* MainViewController.swift in Sources */,
 				0EDEDB9428F1C0B4009F359F /* AppDelegate.swift in Sources */,
+				0E15E6EC28FDB93700CAE16B /* UIViewController + extension.swift in Sources */,
 				0E23770128F1CAC900D67E58 /* MainTabBarController.swift in Sources */,
+				0EBFD5B228F82C3300D557F0 /* UIColor + extension.swift in Sources */,
 				0E23770328F1CC3900D67E58 /* SecondViewController.swift in Sources */,
 				0EDEDB9628F1C0B4009F359F /* SceneDelegate.swift in Sources */,
 				0E23770628F1FD0B00D67E58 /* Colors + Extension.swift in Sources */,
