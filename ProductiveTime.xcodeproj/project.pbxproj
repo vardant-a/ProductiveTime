@@ -74,8 +74,8 @@
 				0EDEDB9728F1C0B4009F359F /* MainViewController.swift */,
 				0E23770228F1CC3900D67E58 /* SecondViewController.swift */,
 				0E23770428F1FCEE00D67E58 /* Extensions */,
-				0E15E6EB28FDB93700CAE16B /* UIViewController + extension.swift */,
 				0EBFD5B128F82C3300D557F0 /* UIColor + extension.swift */,
+				0E15E6EB28FDB93700CAE16B /* UIViewController + extension.swift */,
 				0E15E6ED28FDBDC800CAE16B /* Assets.xcassets */,
 			);
 			path = ProductiveTime;

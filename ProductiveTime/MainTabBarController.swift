@@ -54,8 +54,8 @@ extension MainTabBarController {
 }
 
 
-struct MainTabBarControllerProvider: PreviewProvider {
+struct MainTabBarController_Provider: PreviewProvider {
     static var previews: some View {
-        MainTabBarController().showPreview()
+        UINavigationController(rootViewController: MainTabBarController()).showPreview()
     }
 }
