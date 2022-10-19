@@ -5,7 +5,7 @@
 //  Created by Алексей on 08.10.2022.
 //
 
-import UIKit
+import SwiftUI
 
 final class SecondViewController: UIViewController {
     
@@ -13,5 +13,11 @@ final class SecondViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .green
+    }
+}
+
+struct SecondVC_Provider: PreviewProvider {
+    static var previews: some View {
+        SecondViewController().showPreview()
     }
 }
