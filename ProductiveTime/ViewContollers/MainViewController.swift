@@ -28,24 +28,31 @@ final class MainViewController: UIViewController {
         )
     }()
     
-    
     private var сounterUSER = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .gray
-        
+        setNavBar()
         addSubviews(testButton, saveButton)
         setConstrains()
+        testNav()
     }
     
+    private func setNavBar() {
+
+        let navBarAppearance = UINavigationBarAppearance()
+        navBarAppearance.backgroundColor = UIColor.navTabColor
+        UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
+        title = "Home"
+    }
 
     @objc private func test() {
         сounterUSER += 1
         print("Вы нажали \(сounterUSER) раз")
     }
 }
-
+// MARK: - Adding Subviews
 extension MainViewController {
     
     private func addSubviews(_ subviews: UIView...) {
@@ -81,7 +88,17 @@ extension MainViewController {
 
 extension MainViewController {
     
+    fileprivate func testNav() {
+        let width = view.frame.width
+        
+        let titleView = UIView()
+        titleView.frame = .init(x: 0, y: 0, width: width, height: 50)
+        navigationItem.titleView = titleView
+        navigationItem.title = "test"
+    }
+    
     private func setConstrains() {
+        
         NSLayoutConstraint.activate([
             testButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             testButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
@@ -91,7 +108,6 @@ extension MainViewController {
         
         saveButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            
             saveButton.topAnchor.constraint(equalTo: testButton.bottomAnchor, constant: 20),
             saveButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             saveButton.heightAnchor.constraint(equalToConstant: 50),

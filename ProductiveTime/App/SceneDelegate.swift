@@ -13,14 +13,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     // Вызывается сразу после метода application didFinishLaunchingWithOptions
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: UIScreen.main.bounds)
-        let mainViewController = UINavigationController(rootViewController: MainTabBarController())
-        let navBarAppearance = UINavigationBarAppearance()
-        navBarAppearance.backgroundColor = UIColor.navTabColor
-        UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
+        guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        window?.rootViewController = mainViewController
+        window?.rootViewController = MainTabBarController()
         window?.windowScene = windowScene
         window?.makeKeyAndVisible()
     }
