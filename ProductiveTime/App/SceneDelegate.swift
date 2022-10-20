@@ -16,9 +16,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        window?.rootViewController = MainTabBarController()
+        window?.rootViewController = LogScreenViewController()
         window?.windowScene = windowScene
         window?.makeKeyAndVisible()
+        
     }
     
     // Вызывается перед переходом приложения в активное состояние

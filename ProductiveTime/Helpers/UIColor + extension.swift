@@ -11,6 +11,10 @@ extension UIColor {
     
     // MARK: - Custom ColorList
     
+    
+    // Basic text color
+    static var labelColor = UIColor(named: "labelColor")
+    
     // Background color for Navigation and TabBar
     static var navTabColor: UIColor {
         return UIColor { (traits) -> UIColor in
@@ -19,7 +23,8 @@ extension UIColor {
             : UIColor(red: 0.155, green: 0.155, blue: 0.155, alpha: 1)
         }
     }
-    
+    // Basic color for classic style button
+    static var basicButtonColor = UIColor(red: 1 / 255, green: 101 / 255, blue: 255 / 255, alpha: 1)
     
     // MARK: - Setting Hex Color
     convenience init(hexString: String) {

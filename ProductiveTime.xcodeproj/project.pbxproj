@@ -10,8 +10,7 @@
 		0E04A67028FFFC5700D6A4CE /* LogScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E04A66F28FFFC5700D6A4CE /* LogScreenViewController.swift */; };
 		0E15E6EC28FDB93700CAE16B /* UIViewController + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15E6EB28FDB93700CAE16B /* UIViewController + extension.swift */; };
 		0E15E6EE28FDBDC800CAE16B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E15E6ED28FDBDC800CAE16B /* Assets.xcassets */; };
-		0E23770128F1CAC900D67E58 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E23770028F1CAC900D67E58 /* MainTabBarController.swift */; };
-		0E23770328F1CC3900D67E58 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E23770228F1CC3900D67E58 /* SecondViewController.swift */; };
+		0E23770328F1CC3900D67E58 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E23770228F1CC3900D67E58 /* ProfileViewController.swift */; };
 		0EBFD5B228F82C3300D557F0 /* UIColor + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBFD5B128F82C3300D557F0 /* UIColor + extension.swift */; };
 		0EDEDB9428F1C0B4009F359F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDEDB9328F1C0B4009F359F /* AppDelegate.swift */; };
 		0EDEDB9628F1C0B4009F359F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDEDB9528F1C0B4009F359F /* SceneDelegate.swift */; };
@@ -23,8 +22,7 @@
 		0E04A66F28FFFC5700D6A4CE /* LogScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogScreenViewController.swift; sourceTree = "<group>"; };
 		0E15E6EB28FDB93700CAE16B /* UIViewController + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + extension.swift"; sourceTree = "<group>"; };
 		0E15E6ED28FDBDC800CAE16B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0E23770028F1CAC900D67E58 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		0E23770228F1CC3900D67E58 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		0E23770228F1CC3900D67E58 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0EBFD5B128F82C3300D557F0 /* UIColor + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + extension.swift"; sourceTree = "<group>"; };
 		0EDEDB9028F1C0B4009F359F /* ProductiveTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductiveTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDEDB9328F1C0B4009F359F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,9 +47,8 @@
 			isa = PBXGroup;
 			children = (
 				0E04A66F28FFFC5700D6A4CE /* LogScreenViewController.swift */,
-				0E23770028F1CAC900D67E58 /* MainTabBarController.swift */,
 				0EDEDB9728F1C0B4009F359F /* MainViewController.swift */,
-				0E23770228F1CC3900D67E58 /* SecondViewController.swift */,
+				0E23770228F1CC3900D67E58 /* ProfileViewController.swift */,
 			);
 			path = ViewContollers;
 			sourceTree = "<group>";
@@ -185,9 +182,8 @@
 				0E04A67028FFFC5700D6A4CE /* LogScreenViewController.swift in Sources */,
 				0EDEDB9428F1C0B4009F359F /* AppDelegate.swift in Sources */,
 				0E15E6EC28FDB93700CAE16B /* UIViewController + extension.swift in Sources */,
-				0E23770128F1CAC900D67E58 /* MainTabBarController.swift in Sources */,
 				0EBFD5B228F82C3300D557F0 /* UIColor + extension.swift in Sources */,
-				0E23770328F1CC3900D67E58 /* SecondViewController.swift in Sources */,
+				0E23770328F1CC3900D67E58 /* ProfileViewController.swift in Sources */,
 				0EDEDB9628F1C0B4009F359F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

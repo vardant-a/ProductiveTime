@@ -29,22 +29,18 @@ final class MainViewController: UIViewController {
     }()
     
     private var сounterUSER = 0
+    
+    let navBarAppearance = UINavigationBarAppearance()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .gray
-        setNavBar()
         addSubviews(testButton, saveButton)
         setConstrains()
-        testNav()
-    }
-    
-    private func setNavBar() {
-
-        let navBarAppearance = UINavigationBarAppearance()
+        
+        title = "Test 1"
         navBarAppearance.backgroundColor = UIColor.navTabColor
         UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
-        title = "Home"
     }
 
     @objc private func test() {
@@ -87,15 +83,6 @@ extension MainViewController {
 }
 
 extension MainViewController {
-    
-    fileprivate func testNav() {
-        let width = view.frame.width
-        
-        let titleView = UIView()
-        titleView.frame = .init(x: 0, y: 0, width: width, height: 50)
-        navigationItem.titleView = titleView
-        navigationItem.title = "test"
-    }
     
     private func setConstrains() {
         
