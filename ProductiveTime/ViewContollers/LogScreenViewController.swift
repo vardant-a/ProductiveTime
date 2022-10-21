@@ -28,26 +28,15 @@ final class LogScreenViewController: UIViewController {
         label.textAlignment = .left
         return label
     }()
-    // Phone TextField
-    private lazy var phoneTF: UITextField = {
-        let textField = UITextField()
-        return textField
-    }()
-    private lazy var passwordTF: UITextField = {
-        let textField = UITextField()
-        return textField
-    }()
     
-    private var testStack: UIStackView = {
-        let stack = UIStackView()
-        
-        return stack
-    }()
+    private lazy var customStackView = UIStackView()
+
     // Button LogIn
     private lazy var logInButton: UIButton = {
-       let button = UIButton()
+        let button = UIButton()
         button.setTitle("Login", for: .normal)
         button.backgroundColor = .basicButtonColor
+        
         return button
     }()
     
@@ -55,8 +44,7 @@ final class LogScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        title = "test"
-        addSubviews(loginImage, logInButton, titleLabel)
+        addSubviews(loginImage, titleLabel, logInButton)
         setConstraints()
     }
 }
@@ -68,10 +56,10 @@ extension LogScreenViewController {
         // LoginImage
         loginImage.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            loginImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 40),
+            loginImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 70),
             loginImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            loginImage.widthAnchor.constraint(equalToConstant: 300),
-            loginImage.heightAnchor.constraint(equalToConstant: 300)
+            loginImage.widthAnchor.constraint(equalToConstant: 250),
+            loginImage.heightAnchor.constraint(equalToConstant: 250)
         ])
         
         // titleLabel
@@ -84,7 +72,7 @@ extension LogScreenViewController {
         //LogInButton
         logInButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            logInButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20),
+            logInButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -140),
             logInButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             logInButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
         ])
@@ -93,7 +81,6 @@ extension LogScreenViewController {
 
 // MARK: - Adding Subviews
 extension LogScreenViewController {
-
     private func addSubviews(_ subviews: UIView...) {
         subviews.forEach { subview in
             view.addSubview(subview)
